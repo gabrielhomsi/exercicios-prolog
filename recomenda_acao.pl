@@ -1,3 +1,7 @@
+/*
+    Recomenda uma ação baseando-se nas condições das estradas (boas / esburacadas) e tempo (ensolarado / chuvoso)
+*/
+
 entra_estrada(E) :-
     nl,
     write('Como estao as estradas?'),
@@ -10,7 +14,7 @@ entra_tempo(T) :-
     write('Como esta o tempo?'),
     nl,
     write('(ensolarado, chuvoso) ===>'),
-    read(T).Q
+    read(T).
 
 recomenda_acao(C, ESTRADAS, TEMPO) :-
     ESTRADAS = boas, TEMPO = ensolarado -> C = 'va a praia';
@@ -25,3 +29,8 @@ decisao :-
     nl,
     write('voce deve ==>'),
     write(Z).
+
+/*
+    Consulta:
+    ?- decisao
+*/
