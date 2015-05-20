@@ -8,6 +8,7 @@
   - Tenha a quantidade do item em estoque
   - A quantidade solicitada for menor ou igual ao estoque disponível
 */
+
 cliente(joao, 500).
 cliente(maria, 1000).
 
@@ -21,7 +22,7 @@ valida_item(Cl, Item, QtdSol) :-
     Cred >= (QtdSol * Preco).
 
 /*
-  Exemplos:
+  Consultas:
   ?- valida_item(joao, sabao, 10).
   ?- valida_item(maria, bombril, 80).
   ?- valida_item(joao, bombril, 51).
