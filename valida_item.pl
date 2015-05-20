@@ -19,3 +19,10 @@ valida_item(Cl, Item, QtdSol) :-
     item(Item, Qtd, Preco),
     QtdSol =< Qtd,
     Cred >= (QtdSol * Preco).
+
+/*
+  Exemplos:
+  ?- valida_item(joao, sabao, 10).
+  ?- valida_item(maria, bombril, 80).
+  ?- valida_item(joao, bombril, 51).
+*/
