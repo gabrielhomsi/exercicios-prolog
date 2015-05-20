@@ -1,5 +1,7 @@
 /*
-    Recomenda uma ação baseando-se nas condições das estradas (boas / esburacadas) e tempo (ensolarado / chuvoso)
+    Recomenda uma ação baseando-se nas seguintes condições:
+    - Estradas (boas / esburacadas)
+    - Tempo (ensolarado / chuvoso)
 */
 
 entra_estrada(E) :-
