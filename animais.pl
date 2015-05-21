@@ -1,0 +1,9 @@
+ave(piupiu).
+peixe(sereia).
+minhoca(irgh).
+gato(meugato).
+gosta(X,Y):-ave(X),minhoca(Y);gato(X),ave(Y).
+gosta(meugato,eu).
+gosta(eu,meugato).
+amigo(X,Y):-gosta(X,Y),gosta(Y,X).
+come(X,Y):-gosta(X,Y).
